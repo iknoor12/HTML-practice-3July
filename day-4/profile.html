@@ -5,77 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Profile</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav>
-        <a href="home.html">Home</a>
-        <a href="profile.html">Profile</a>
-        <a href="courses.html">Courses</a>
-        <a href="feedback.html">Feedback</a>
-        <a href="grades_table.html">Grades</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="courses.html">Courses</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="grades_table.html">Grades</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-    <h1>Student Name: <i>Iknoor</i></h1>
+    <main class="profile-container">
+        <h1>Student Name: <i>Iknoor</i></h1>
 
-    <fieldset>
-        <legend>Personal Information</legend>
+        <fieldset class="profile-info">
+            <legend>Personal Information</legend>
 
-        <p><b>Name:</b> Iknoor</p>
-        <p><b>Course:</b> Bachelor of Computer Applications (BCA)</p>
-        <p><b>University:</b> Eternal University</p>
-        <p><b>Semester:</b> 5th Semester</p>
-        <p><b>Location:</b> Himachal Pradesh, India</p>
+            <p><b>Name:</b> Iknoor</p>
+            <p><b>Course:</b> Bachelor of Computer Applications (BCA)</p>
+            <p><b>University:</b> Eternal University</p>
+            <p><b>Semester:</b> 5th Semester</p>
+            <p><b>Location:</b> Himachal Pradesh, India</p>
 
-    </fieldset>
+        </fieldset>
 
-    <fieldset>
-        <legend>About Me</legend>
+        <fieldset class="about-me">
+            <legend>About Me</legend>
 
-        <p>I am a BCA student with an interest in Full Stack Web Development. I enjoy learning modern web technologies
-            and building
-            practical projects using HTML, CSS, JavaScript, React, Node.js, Express.js, and MongoDB.</p>
+            <p>I am a BCA student with an interest in Full Stack Web Development. I enjoy learning modern web
+                technologies
+                and building
+                practical projects using HTML, CSS, JavaScript, React, Node.js, Express.js, and MongoDB.</p>
 
-    </fieldset>
+        </fieldset>
 
-    <fieldset>
-        <legend>Hobbies</legend>
+        <fieldset class="hobbies">
+            <legend>Hobbies</legend>
 
-        <ul>
-            <li>Web Development</li>
-            <li>Reading Technology Articles</li>
-            <li>Learning New Programming Languages</li>
-            <li>Listening to Music</li>
-        </ul>
+            <ul>
+                <li>Web Development</li>
+                <li>Reading Technology Articles</li>
+                <li>Learning New Programming Languages</li>
+                <li>Listening to Music</li>
+            </ul>
 
-    </fieldset>
+        </fieldset>
 
-    <fieldset>
-        <legend>Skills</legend>
+        <fieldset class="skills">
+            <legend>Skills</legend>
 
-        <ol>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>MongoDB</li>
-            <li>Git & GitHub</li>
-        </ol>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+                <li>Git & GitHub</li>
+            </ol>
 
-    </fieldset>
+        </fieldset>
 
-    <fieldset>
-        <details>
+        <fieldset class="career-goal">
+            <details>
 
-            <summary>Career Goal</summary>
-            <p>My goal is to become a skilled Full Stack Web Developer and build scalable web applications while continuously 
-            improving my programming skills.</p>
+                <summary>Career Goal</summary>
+                <p>My goal is to become a skilled Full Stack Web Developer and build scalable web applications while
+                    continuously
+                    improving my programming skills.</p>
 
-        </details>
-    </fieldset>
+            </details>
+        </fieldset>
+    </main>
 
 </html>

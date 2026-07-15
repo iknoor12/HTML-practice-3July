@@ -1,84 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <nav>
-        <a href="home.html">Home</a>
-        <a href="profile.html">Profile</a>
-        <a href="courses.html">Courses</a>
-        <a href="feedback.html">Feedback</a>
-        <a href="grades_table.html">Grades</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    
-    <h1>Thank you for visiting my Student Profile & Course Portal.</h1>
-    <h3>Please share your feedback to help improve this website!</h3>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="courses.html">Courses</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="grades_table.html">Grades</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-    <form action="#">
+    <main>
+        <h1>Thank you for visiting my Student Profile & Course Portal.</h1>
+        <h3>Please share your feedback to help improve this website!</h3>
 
-        <label for="name">Name: </label>
-        <input type="text" id="name">
-        <br>
-        <br>
+        <form action="#">
 
-        <label for="email">Email: </label>
-        <input type="email" id="email">
-        <br>
-        <br>
+            <label for="name">Name: </label>
+            <input type="text" id="name">
+            <br>
+            <br>
 
-        <label for="gender">Gender: </label>
-        <input type="radio" name="gender" value="male"> Male
-        <input type="radio" name="gender" value="female"> Female
-        <br>
-        <br>
+            <label for="email">Email: </label>
+            <input type="email" id="email">
+            <br>
+            <br>
 
-        <label for="rating">Website rating: </label>
-        <input type="radio" name="rating" value="excellent"> Excellent
-        <input type="radio" name="rating" value="good"> Good
-        <input type="radio" name="rating" value="average"> Average
-        <input type="radio" name="rating" value="poor"> Poor
-        <br>
-        <br>
+            <label for="gender">Gender: </label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br>
+            <br>
 
-        <label for="favorite">Favorite section: </label>
-        <select id="favorite">
-            <option value="select">Select a section</option>
-            <option value="profile">Home</option>
-            <option value="courses">Courses</option>
-            <option value="profile">Profile</option>
-            <option value="grades">Grades</option>
-        </select>
-        <br>
-        <br>
+            <label for="rating">Website rating: </label>
+            <input type="radio" name="rating" value="excellent"> Excellent
+            <input type="radio" name="rating" value="good"> Good
+            <input type="radio" name="rating" value="average"> Average
+            <input type="radio" name="rating" value="poor"> Poor
+            <br>
+            <br>
 
-        <label for="suggestions">Suggestions: </label>
-        <textarea id="suggestions"></textarea>
-        <br>
-        <br>
+            <label for="favorite">Favorite section: </label>
+            <select id="favorite">
+                <option value="select">Select a section</option>
+                <option value="profile">Home</option>
+                <option value="courses">Courses</option>
+                <option value="profile">Profile</option>
+                <option value="grades">Grades</option>
+            </select>
+            <br>
+            <br>
 
-        <label for="recommend">Would you recommend this website?: </label>
-        <input type="radio" name="recommend" value="yes"> Yes
-        <input type="radio" name="recommend" value="no"> No
-        <br>
-        <br>
+            <label for="suggestions">Suggestions: </label>
+            <textarea id="suggestions"></textarea>
+            <br>
+            <br>
 
-        <input type="checkbox" id="terms">
-        <label for="terms">I agree to the terms and conditions</label>
-        <br>
-        <br>
+            <label for="recommend">Would you recommend this website?: </label>
+            <input type="radio" id="yes" name="recommend" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="recommend" value="no">
+            <label for="no">No</label>
+            <br>
+            <br>
 
-        <button type="submit" value="Submit">Submit</button>
-        <br>
-        <br>
-        
-        <button type="reset" value="Reset">Reset</button>
+            <input type="checkbox" id="terms">
+            <label for="terms">I agree to the terms and conditions</label>
+            <br>
+            <br>
 
-    </form>
+            <button type="submit" value="Submit">Submit</button>
+            <br>
+            <br>
+
+            <button type="reset" value="Reset">Reset</button>
+
+        </form>
+    </main>
 
 </body>
+
 </html>
