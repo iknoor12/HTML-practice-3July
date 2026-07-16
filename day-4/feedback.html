@@ -23,21 +23,21 @@
 
     <main>
         <h1>Thank you for visiting my Student Profile & Course Portal.</h1>
-        <h3>Please share your feedback to help improve this website!</h3>
+        <h3 id="form-head">Please share your feedback to help improve this website!</h3>
 
-        <form action="#">
+        <form action="#" class="form">
 
-            <label for="name">Name: </label>
-            <input type="text" id="name">
+            <label for="name" class="label">Name: </label>
+            <input type="text" id="name" placeholder="Enter your name">
             <br>
             <br>
 
-            <label for="email">Email: </label>
-            <input type="email" id="email">
+            <label for="email" class="label">Email: </label>
+            <input type="email" id="email" placeholder="Enter your email">
             <br>
             <br>
 
-            <label for="gender">Gender: </label>
+            <label for="gender" class="label">Gender: </label>
             <input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label>
             <input type="radio" id="female" name="gender" value="female">
@@ -45,7 +45,7 @@
             <br>
             <br>
 
-            <label for="rating">Website rating: </label>
+            <label for="rating" class="label">Website rating: </label>
             <input type="radio" name="rating" value="excellent"> Excellent
             <input type="radio" name="rating" value="good"> Good
             <input type="radio" name="rating" value="average"> Average
@@ -53,7 +53,7 @@
             <br>
             <br>
 
-            <label for="favorite">Favorite section: </label>
+            <label for="favorite" class="label">Favorite section: </label>
             <select id="favorite">
                 <option value="select">Select a section</option>
                 <option value="profile">Home</option>
@@ -64,12 +64,12 @@
             <br>
             <br>
 
-            <label for="suggestions">Suggestions: </label>
-            <textarea id="suggestions"></textarea>
+            <label for="suggestions" class="label">Suggestions: </label>
+            <textarea id="suggestions" placeholder="Enter your suggestions"></textarea>
             <br>
             <br>
 
-            <label for="recommend">Would you recommend this website?: </label>
+            <label for="recommend" class="label">Would you recommend this website?: </label>
             <input type="radio" id="yes" name="recommend" value="yes">
             <label for="yes">Yes</label>
             <input type="radio" id="no" name="recommend" value="no">
@@ -78,13 +78,11 @@
             <br>
 
             <input type="checkbox" id="terms">
-            <label for="terms">I agree to the terms and conditions</label>
+            <label for="terms">I agree to the terms and conditions.</label>
             <br>
             <br>
 
             <button type="submit" value="Submit">Submit</button>
-            <br>
-            <br>
 
             <button type="reset" value="Reset">Reset</button>
 

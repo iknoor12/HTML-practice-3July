@@ -5,6 +5,12 @@
     line-height: 1.5;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
 /*  HEADER  */
 header {
     background-color: #f0f0f0;
@@ -41,6 +47,22 @@ h1 {
     padding: 20px;
 }
 
+.profile-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    padding: 0 40px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+}
+
 fieldset {
     padding: 20px;
     border: 1px solid #cccccc;
@@ -63,12 +85,16 @@ ol {
 .courses {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 0 auto;
     gap: 50px;
     padding: 40px;
 }
 
 .course {
     background-color: #e7e7e7af;
+    border: 2px solid #cccccc;
+    box-shadow: 8px 8px 10px #cccccc;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -77,10 +103,111 @@ ol {
 
 iframe {
     width: 80%;
-    height: 300px;
-    border: none;
+    height: 250px;
     border-radius: 5px;
     margin-top: 15px;
+}
+
+
+/*  FEADBACK  */
+#form-head {
+    text-align: center;
+}
+
+.form {
+    border: 2px solid #cccccc;
+    padding: 30px;
+    margin: 20px 500px;
+    font-size: large;
+    background-color: #e7e7e7af;
+    box-shadow: 8px 8px 10px #cccccc;
+    border-radius: 10px;
+}
+
+.label{
+    font-weight: bold;
+}
+
+#name, #email, #suggestions {
+    width: 80%;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+#favorite {
+    width: 30%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*  GRADES TABLE  */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #cccccc;
+}
+
+caption {
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+th, tfoot {
+    padding: 10px 20px;
+    font-size: large;
+    background-color: #f0f0f0;
+}
+
+td {
+    padding: 5px 10px;
+}
+
+
+/*  CONTACT US  */
+.contact-head {
+    text-align: center;
+}
+
+.contact-info {
+    margin: 30px auto;
+    border: 2px solid #cccccc;
+    box-shadow: 8px 8px 10px #cccccc;
+    background-color: #f3f2f2cb;
+    padding: 20px 40px;
+    border-radius: 5px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: large;
+}
+
+.contact-info h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#address {
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#contact-button {
+    margin-top: 10px;
+    width: 20%;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 footer {
