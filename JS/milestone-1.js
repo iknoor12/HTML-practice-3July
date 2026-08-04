@@ -97,3 +97,21 @@ let total = math + science + english + hindi;
 let average = total / 4;
 student = {...student, name, total, average};
 console.log(student);
+
+
+
+// IN REFLECTION
+
+let all = {
+    name: "iknoor",
+    age: 20,
+    eligible: true,
+    vote: null,
+    array: [1, 2, 3],
+    extra: undefined,
+    number: 3.14783490264332895543692746,
+    spell: function (){
+        return -1;
+    }
+}
+console.log(all)
