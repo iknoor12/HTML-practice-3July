@@ -1,3 +1,4 @@
+// PHASE-1 DAY-2
 export function UserProfile({ name, avatarUrl, bio }){
     return (
         <div>
