@@ -1,6 +1,8 @@
 import './App.css'
 import { Button } from './components/Button'
 import { UserProfile } from './components/UserProfile';
+import { TodoList } from './components/TodoList'
+import { useState } from 'react';
 
 function App() {
   // PHASE-1
@@ -32,8 +34,34 @@ function App() {
     { id: 5, name: "Rahul", passed: false }
   ];
 
+
+  // PHASE-2 DAY-1
+  const [ count, setCount ] = useState(0);
+
+  function increament(){
+    setCount( count + 1);
+  }
+
+  function decreament(){
+    setCount(count - 1);
+  }
+
+  function reset(){
+    setCount(0);
+  }
+
+
+  const [ dark, setDark ] = useState(false);
+
+  function toggle(){
+    setDark(!dark);
+  }
+
   return (
-    <>
+    <div style={{
+      backgroundColor: dark ? "black": "white",
+      color: dark ? "white": "black",
+    }}>
       {/* PHASE-1 */}
       {/* DAY-1 */}
       <div>
@@ -71,7 +99,25 @@ function App() {
           ))}
       </div>
 
-    </>
+
+      {/* PHASE-2 */}
+      {/* DAY-1 */}
+      <div>
+        <h2>{count}</h2>
+
+        <button onClick={increament}>Increament</button>
+        <button onClick={decreament}>Decreament</button>
+        <button onClick={reset}>Reset</button>
+      </div>
+
+
+      <button onClick={toggle}>Toggle Button</button>
+
+
+      {/* DAY-2 */}
+      <TodoList />
+
+    </div>
   )
 }
 
